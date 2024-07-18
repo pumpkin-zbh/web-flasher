@@ -26,7 +26,7 @@
                     </a>
                 </li>
             </ul>
-            <div id="accordion-nordic" data-accordion="collapse">
+            <!-- <div id="accordion-nordic" data-accordion="collapse">
                 <span id="accordion-nordic-heading">
                     <button type="button" class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-nordic-body" aria-expanded="true" aria-controls="accordion-esp-body">
                     <span class="flex items-center">
@@ -63,7 +63,7 @@
                         {{ target.displayName }}
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
         <button data-tooltip-target="tooltip-auto" class="mx-2 display-inline content-center px-3 py-2 text-xs font-medium text-center  hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg inline-flex items-center text-white hover:text-black"
             type="button"

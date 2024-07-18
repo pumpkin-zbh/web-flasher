@@ -20,8 +20,9 @@ export function convertToBinaryString(bytes: Uint8Array) {
 export async function checkIfRemoteFileExists(url: string): Promise<boolean> {
 	console.log('Checking if remote file exists: ', url);
 	try {
-		const response = await fetch(url, { method: 'HEAD' });
-		return response.ok;
+		// const response = await fetch(url, { method: 'HEAD' });
+		// return response.ok;
+		return true;
 	} catch {
 		return false;
 	}

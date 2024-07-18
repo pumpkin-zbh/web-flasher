@@ -21,6 +21,7 @@ import {
   getCorsFriendyReleaseUrl,
 } from '../types/api';
 import { createUrl } from './store';
+import { firmwareList } from '~/types/resources';
 
 const firmwareApi = mande(createUrl('api/github/firmware/list'))
 
@@ -56,13 +57,18 @@ export const useFirmwareStore = defineStore('firmware', {
       this.hasSeenReleaseNotes = true
     },
     async fetchList() {
-      firmwareApi.get<FirmwareReleases>()
-        .then((response: FirmwareReleases) => {
-          // Only grab the latest 4 releases
-          this.stable = response.releases.stable.slice(0, 4);
-          this.alpha = response.releases.alpha.slice(0, 4);
-          this.pullRequests = response.pullRequests.slice(0, 4);
-        })
+      // firmwareApi.get<FirmwareReleases>()
+      //   .then((response: FirmwareReleases) => {
+      //     console.log(response)
+      //     // Only grab the latest 4 releases
+      //     this.stable = response.releases.stable.slice(0, 4);
+      //     this.alpha = response.releases.alpha.slice(0, 4);
+      //     this.pullRequests = response.pullRequests.slice(0, 4);
+      //   })
+      // 先采用离线数据
+      this.stable = firmwareList.release.stable.slice(0, 4);
+      this.alpha = firmwareList.release.alpha.slice(0, 4);
+      this.pullRequests = firmwareList.pullRequests.slice(0, 4);
     },
     setSelectedFirmware(firmware: FirmwareResource) {
       this.selectedFirmware = firmware;
@@ -70,6 +76,7 @@ export const useFirmwareStore = defineStore('firmware', {
       this.hasSeenReleaseNotes = false;
     },
     getReleaseFileUrl(fileName: string): string {
+      if (this.selectedFirmware?.download_url) return this.selectedFirmware.download_url;
       if (!this.selectedFirmware?.zip_url) return '';
       const baseUrl = getCorsFriendyReleaseUrl(this.selectedFirmware.zip_url);
       return `${baseUrl}/${fileName}`;
@@ -96,6 +103,7 @@ export const useFirmwareStore = defineStore('firmware', {
     async updateEspFlash(fileName: string) {
       const terminal = await openTerminal();
       this.port = await navigator.serial.requestPort({});
+      console.log(this.port)
       this.isConnected = true;
       this.port.ondisconnect = () => {
         this.isConnected = false;
@@ -105,7 +113,7 @@ export const useFirmwareStore = defineStore('firmware', {
       const content = await this.fetchBinaryContent(fileName);
       this.isFlashing = true;
       const flashOptions: FlashOptions = {
-        fileArray: [{ data: content, address: 0x10000 }],
+        fileArray: [{ data: content, address: 0x00000 }],
         flashSize: 'keep',
         eraseAll: false,
         compress: true,
@@ -163,6 +171,12 @@ export const useFirmwareStore = defineStore('firmware', {
       await this.startWrite(terminal, espLoader, transport, flashOptions);
     },
     async fetchBinaryContent(fileName: string): Promise<string> {
+      if (this.selectedFirmware?.download_url) {
+        const response = await fetch('https://raw.githubusercontent.com/meshtastic/meshtastic.github.io/master/firmware-2.3.13.83f5ba0/firmware-meshtastic-dr-dev-2.3.13.83f5ba0.bin');
+        const blob = await response.blob();
+        const data = await blob.arrayBuffer();
+        return convertToBinaryString(new Uint8Array(data));
+      }
       if (this.selectedFirmware?.zip_url) {
         const baseUrl = getCorsFriendyReleaseUrl(this.selectedFirmware!.zip_url!);
         const response = await fetch(`${baseUrl}/${fileName}`);
