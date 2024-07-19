@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     '/': { prerender: true },
   },
 
+  app: {
+    // baseURL: '/web-flasher/',
+    buildAssetsDir: 'assets',
+  },
+
   ssr: false,
   css: ['~/assets/css/main.css'],
 
@@ -28,7 +33,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  runtimeConfig: {
+    public: {
+      baseURL: 'web-flasher'
+    }
+  },
   vite: {
     plugins: [
       nodePolyfills(),
