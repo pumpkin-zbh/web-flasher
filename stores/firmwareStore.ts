@@ -172,7 +172,7 @@ export const useFirmwareStore = defineStore('firmware', {
     },
     async fetchBinaryContent(fileName: string): Promise<string> {
       if (this.selectedFirmware?.download_url) {
-        const response = await fetch('https://raw.githubusercontent.com/meshtastic/meshtastic.github.io/master/firmware-2.3.13.83f5ba0/firmware-meshtastic-dr-dev-2.3.13.83f5ba0.bin');
+        const response = await fetch(this.selectedFirmware.download_url);
         const blob = await response.blob();
         const data = await blob.arrayBuffer();
         return convertToBinaryString(new Uint8Array(data));

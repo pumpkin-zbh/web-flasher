@@ -10,11 +10,6 @@ export default defineNuxtConfig({
     '/': { prerender: true },
   },
 
-  app: {
-    // baseURL: '/web-flasher/',
-    buildAssetsDir: 'assets',
-  },
-
   ssr: false,
   css: ['~/assets/css/main.css'],
 

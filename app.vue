@@ -56,7 +56,7 @@
           </div>
         </div>
       </transition>
-      <div class="text-center mt-4 flex justify-center gap-4">
+      <!-- <div class="text-center mt-4 flex justify-center gap-4">
         <button type="button" v-if="!serialMonitorStore.isConnected" @click="monitorSerial" class="inline border border-meshtastic focus:ring-4 focus:outline-none font-medium rounded-lg text-xs px-4 py-1 text-center me-2 mb-2 text-meshtastic hover:text-black hover:bg-white hover:border-transparent hover:shadow transition duration-300 ease-in-out">
           Open Serial Monitor <CommandLineIcon class="h-4 w-4 inline mb-1" />
         </button>
@@ -68,12 +68,12 @@
             </svg>
           </span>
         </a>
-      </div>
+      </div> -->
     </section>
 
     <SerialMonitor />
 
-    <footer class="footer bg-2C2D3C text-white mt-4 py-4">
+    <!-- <footer class="footer bg-2C2D3C text-white mt-4 py-4">
       <div class="container mx-auto px-5 py-4 text-center">
         <p>
           Powered by
@@ -82,7 +82,7 @@
           <a href="https://meshtastic.org/docs/legal">Legal Information</a>.
         </p>
       </div>
-    </footer>
+    </footer> -->
     <div class="fixed -end-4 bottom-6 group">
       <button type="button" :disabled="true" 
         :class="{ 

@@ -11,7 +11,7 @@
         </button>
         <div id="dropdownFirmware" class="z-10 hidden bg-gray-200 divide-y divide-gray-600 rounded-lg shadow w-44">
             <div class="px-4 py-2 text-sm text-gray-900 dark:text-white">
-                <strong>Stable</strong>
+                <strong>Firmware</strong>
             </div>
             <ul class="py-2 text-sm text-gray-800" aria-labelledby="dropdownInformationButton">
                 <li v-for="release in store.$state.stable">
@@ -20,7 +20,7 @@
                     </span>
                 </li>
             </ul>
-            <div class="px-4 py-2 text-sm text-gray-900">
+            <!-- <div class="px-4 py-2 text-sm text-gray-900">
                 <strong>Alpha</strong>
             </div>
             <ul class="py-2 text-sm text-gray-800" aria-labelledby="dropdownInformationButton">
@@ -29,7 +29,7 @@
                         {{ release.title.replace('Meshtastic Firmware ', '') }}
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
         <button data-tooltip-target="tooltip-file" class="mx-2 display-inline content-center px-3 py-2 text-xs font-medium text-center  hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg inline-flex items-center text-white hover:text-black"
             type="button"
