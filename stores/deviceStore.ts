@@ -1,6 +1,6 @@
 import { mande } from 'mande';
 import { defineStore } from 'pinia';
-import { OfflineHardwareList } from '../config';
+import { OfflineHardwareList, firmwareList } from '../config';
 
 import {
   Client,
@@ -52,11 +52,19 @@ export const useDeviceStore = defineStore('device', {
             this.targets = OfflineHardwareList.filter((t: DeviceHardware) => t.activelySupported);
             if (this.targets.length === 1) {
                 this.setSelectedTarget(this.targets[0]);
+                const firmwareStore = useFirmwareStore();
+                const firmware = firmwareList.find((f) => f.model === this.targets[0].model)?.release.stable[0]
+                if(!firmware) return
+                firmwareStore.setSelectedFirmware(firmware);
             }
             // }
         },
         setSelectedTarget(target: DeviceHardware) {
             this.selectedTarget = target;
+            const firmwareStore = useFirmwareStore();
+            const firmware = firmwareList.find((f) => f.model === target.model)?.release.stable[0]
+            if(!firmware) return
+            firmwareStore.setSelectedFirmware(firmware);
         },
         async openDeviceConnection(): Promise<SerialConnection> {
             this.client = new Client();

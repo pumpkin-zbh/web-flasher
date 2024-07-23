@@ -1,4 +1,5 @@
 export interface FirmwareResource {
+	model?: string;
 	id: string;
 	title: string;
 	page_url?: string;
@@ -16,6 +17,7 @@ export interface FirmwareReleases {
 }
 
 export interface DeviceHardware {
+	model: string;
 	hwModel: number;
 	hwModelSlug: string;
 	platformioTarget: string;

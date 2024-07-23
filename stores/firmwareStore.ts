@@ -21,7 +21,7 @@ import {
   getCorsFriendyReleaseUrl,
 } from '../types/api';
 import { createUrl } from './store';
-import { firmwareList } from '~/types/resources';
+import { firmwareList } from '../config';
 
 const firmwareApi = mande(createUrl('api/github/firmware/list'))
 
@@ -66,9 +66,9 @@ export const useFirmwareStore = defineStore('firmware', {
       //     this.pullRequests = response.pullRequests.slice(0, 4);
       //   })
       // 先采用离线数据
-      this.stable = firmwareList.release.stable.slice(0, 4);
-      this.alpha = firmwareList.release.alpha.slice(0, 4);
-      this.pullRequests = firmwareList.pullRequests.slice(0, 4);
+      this.stable = firmwareList.map(f => f.release.stable[0]);
+      this.alpha = firmwareList.map(f => f.release.alpha[0]);
+      this.pullRequests = firmwareList.map(f => f.pullRequests[0]);
     },
     setSelectedFirmware(firmware: FirmwareResource) {
       this.selectedFirmware = firmware;

@@ -42,14 +42,6 @@ const serialMonitorStore = useSerialMonitorStore();
 
 const fileExistsOnServer = ref(false);
 
-watch(() => firmwareStore.$state.selectedFirmware, async () => {
-    await preflightCheck();
-});
-
-watch(() => deviceStore.$state.selectedTarget, async () => {
-    await preflightCheck();
-});
-
 const preflightCheck = async () => {
     if (!firmwareStore.hasOnlineFirmware) {
         fileExistsOnServer.value = false;
@@ -69,6 +61,10 @@ const preflightCheck = async () => {
         fileExistsOnServer.value = false;
     }
 }
+
+watch([() => deviceStore.selectedTarget, () => firmwareStore.selectedFirmware], async () => {
+    await preflightCheck();
+}, { immediate: true });
 
 // Either we have a custom zip file or a selected firmware release
 const canFlash = computed(() => {
