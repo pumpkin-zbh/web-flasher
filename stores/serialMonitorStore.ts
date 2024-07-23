@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 export const useSerialMonitorStore = defineStore("serialMonitor", {
   state: () => {
     return {
-      baudRate: 115200,
+      baudRate: 921600,
       isOpen: false,
       terminalBuffer: new Array<string>(),
       isConnected: false,

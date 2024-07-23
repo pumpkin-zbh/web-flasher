@@ -1,6 +1,6 @@
 import { mande } from 'mande';
 import { defineStore } from 'pinia';
-import { OfflineHardwareList } from '~/types/resources';
+import { OfflineHardwareList } from '../config';
 
 import {
   Client,
@@ -50,6 +50,9 @@ export const useDeviceStore = defineStore('device', {
             //     console.error(ex);
             //     // Fallback to offline list
             this.targets = OfflineHardwareList.filter((t: DeviceHardware) => t.activelySupported);
+            if (this.targets.length === 1) {
+                this.setSelectedTarget(this.targets[0]);
+            }
             // }
         },
         setSelectedTarget(target: DeviceHardware) {
@@ -62,7 +65,7 @@ export const useDeviceStore = defineStore('device', {
             await connection
                 .connect({
                     port,
-                    baudRate: 115200,
+                    baudRate: 921600,
                     concurrentLogOutput: true,
                 });
             return connection;
