@@ -25,12 +25,14 @@
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div class="rounded-lg h-72 overflow-hidden flex flex-col items-center display-inline">
-                <img src="@/assets/img/hydra-pcb.svg" class="h-60 mb-2 invert mx-auto" alt="Device" />
+                <img :src="deviceStore.selectedTarget?.displayImage  ? deviceStore.selectedTarget.displayImage : DefaultDeviceImage"
+                  :class="deviceStore.selectedTarget?.displayImage ? '' : 'invert'"
+                  class="h-60 mb-2 mx-auto" alt="Device" />
                 <Device />
               </div>
               <h2 class="text-xl font-medium title-font text-white mt-5">Device</h2>
               <p class="text-base leading-relaxed mt-2">
-                Plug in your device via USB. Please ensure the cable is not a power-only one. 
+                Plug in your device via USB. Please ensure the cable is not a power-only one.
               </p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -40,7 +42,7 @@
               </div>
               <h2 class="text-xl font-medium title-font text-white mt-5">Firmware</h2>
               <p class="text-base leading-relaxed mt-2">
-                Choose from the release options or upload a release zip downloaded from Github. 
+                Please select a firmware version from the list below.
               </p>
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -50,7 +52,7 @@
               </div>
               <h2 class="text-xl font-medium title-font text-white mt-5">Flash</h2>
               <p class="text-base leading-relaxed mt-2">
-                Flash your device. Choose whether you wish to update your device or wipe the flash and install from scratch.
+                Begin updating your device firmware. Please ensure the device is powered and in download mode.
               </p>
             </div>
           </div>
@@ -121,9 +123,11 @@ import {
 
 import { useFirmwareStore } from './stores/firmwareStore';
 import { useSerialMonitorStore } from './stores/serialMonitorStore';
+import DefaultDeviceImage from "./assets/img/hydra-pcb.svg"
 
 const serialMonitorStore = useSerialMonitorStore();
 const firmwareStore = useFirmwareStore();
+const deviceStore = useDeviceStore();
 
 const monitorSerial = () => {
   serialMonitorStore.monitorSerial();

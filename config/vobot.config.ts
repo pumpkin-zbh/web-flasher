@@ -1,4 +1,5 @@
-import VOBOT from "../assets/img/vobot.png";
+import D1 from "../assets/img/d1.png";
+
 
 export const VobotOfflineHardwareList = [
   {
@@ -9,7 +10,7 @@ export const VobotOfflineHardwareList = [
     activelySupported: true,
     model: "D1",
     displayName: "Mini Dock",
-    displayImage: VOBOT
+    displayImage: D1
   }
 ];
 

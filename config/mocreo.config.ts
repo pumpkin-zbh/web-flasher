@@ -1,4 +1,5 @@
-import MOCREO from "../assets/img/mocreo.png";
+import H5Lite from "../assets/img/h5-lite.png";
+import NS1 from "../assets/img/ns1.png";
 
 export const MocreoOfflineHardwareList = [
   {
@@ -9,7 +10,7 @@ export const MocreoOfflineHardwareList = [
     activelySupported: true,
     model: "H5-Pro",
     displayName: "H5-Pro",
-    displayImage: MOCREO
+    displayImage: H5Lite
   },
   {
     hwModel: 2,
@@ -19,7 +20,7 @@ export const MocreoOfflineHardwareList = [
     activelySupported: true,
     model: "H5-Lite",
     displayName: "H5-Lite",
-    displayImage: MOCREO
+    displayImage: H5Lite
   },
   {
     hwModel: 3,
@@ -29,7 +30,7 @@ export const MocreoOfflineHardwareList = [
     activelySupported: true,
     model: "NS1",
     displayName: "NS1",
-    displayImage: MOCREO
+    displayImage: NS1
   }
 ];
 

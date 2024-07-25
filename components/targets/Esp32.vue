@@ -14,7 +14,7 @@
                         </h3>
                         <div class="p-4 mb-4 my-2 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
                             <span class="font-medium">
-                                <InformationCircleIcon class="h-4 w-4 inline" />
+                                <!-- <InformationCircleIcon class="h-4 w-4 inline" />
                                 If your device is ESP32-S3 based, you may need to turn off, then press and hold the BOOT / USR button while plugging in the USB cable.
                                 <br />
                                 Alternatively, you can try the <strong>1200bps Reset</strong> method to place the device in correct mode.
@@ -23,7 +23,8 @@
                                     @click="deviceStore.baud1200()">
                                     <CpuChipIcon class="h-4 w-4 text-black" />
                                     1200bps Reset
-                                </button>
+                                </button> -->
+                                If your device is ESP32-S3 based, you may need to turn off, then press and hold the BOOT / USR button while plugging in the USB cable.
                             </span>
                         </div>
 
