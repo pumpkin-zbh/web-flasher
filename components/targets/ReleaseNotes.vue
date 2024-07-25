@@ -5,7 +5,7 @@
     </h1>
     <div v-if="releaseNotes" v-html="releaseNotes">
     </div>
-    <button @click="firmwareStore.continueToFlash()" class="border border-meshtastic focus:ring-4 focus:outline-none font-medium rounded-lg text-small px-4 py-2 text-center me-2 mb-2 text-meshtastic hover:text-black hover:bg-white hover:border-transparent hover:shadow">
+    <button @click="firmwareStore.continueToFlash()" class="mt-4 border border-meshtastic focus:ring-4 focus:outline-none font-medium rounded-lg text-small px-4 py-2 text-center me-2 mb-2 text-meshtastic hover:text-black hover:bg-white hover:border-transparent hover:shadow">
       Continue
     </button>
   </div>
