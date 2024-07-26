@@ -24,7 +24,7 @@
                                     <CpuChipIcon class="h-4 w-4 text-black" />
                                     1200bps Reset
                                 </button> -->
-                                If your device is ESP32-S3 based, you may need to turn off, then press and hold the BOOT / USR button while plugging in the USB cable.
+                                Press the button, then connect the Mini Dock and the computer through a data cable, then release the button. At this point, the device will enter download mode, and neither the screen nor the ambient light will light up.
                             </span>
                         </div>
 
@@ -63,12 +63,12 @@
                             This process could take a minute. 
                         </p>
                         <p>
-                        <div class="p-4 mb-4 my-2 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+                        <!-- <div class="p-4 mb-4 my-2 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
                             <span class="font-medium">
                             <InformationCircleIcon class="h-4 w-4 inline" />
                             After the flashing process is complete, you may need to press the RST button if the device does not reboot automatically or says "waiting to download" in the console.
                        </span>
-                  </div>
+                  </div> -->
                         </p>
                     </li>
                 </ol>
