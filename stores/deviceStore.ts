@@ -50,7 +50,7 @@ export const useDeviceStore = defineStore('device', {
             //     console.error(ex);
             //     // Fallback to offline list
             this.targets = OfflineHardwareList.filter((t: DeviceHardware) => t.activelySupported);
-            if (this.targets.length === 1) {
+            if (this.targets.length > 0) {
                 this.setSelectedTarget(this.targets[0]);
                 const firmwareStore = useFirmwareStore();
                 const firmware = firmwareList.find((f) => f.model === this.targets[0].model)?.release.stable[0]

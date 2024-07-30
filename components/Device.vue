@@ -6,8 +6,8 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg>
         </button>
-        <div id="dropdownDevices" class="z-10 hidden bg-gray-200 divide-y divide-gray-500 rounded-lg shadow w-52">
-            <div id="accordion-esp" data-accordion="collapse">
+        <div id="dropdownDevices" class="z-10 hidden bg-gray-200 divide-y divide-gray-500 rounded-lg shadow w-52 overflow-hidden">
+            <!-- <div id="accordion-esp" data-accordion="collapse">
                 <span id="accordion-esp-heading">
                     <button type="button" class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-esp-body" aria-expanded="true" aria-controls="accordion-esp-body">
                     <span class="flex items-center">
@@ -18,7 +18,7 @@
                     </svg>
                     </button>
                 </span>
-            </div>
+            </div> -->
             <ul id="accordion-esp-body" aria-labelledby="accordion-esp-heading" class="text-xs text-gray-900">
                 <li v-for="target in store.$state.targets.filter(h => h.architecture.includes('esp')).sort((a, b) => a.displayName.localeCompare(b.displayName))">
                     <a class="block px-4 py-1 hover:bg-gray-400 cursor-pointer" @click="setTarget(target)">
