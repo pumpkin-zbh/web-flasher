@@ -46,8 +46,17 @@ Thank you for using and supporting the Meshtastic Web Flasher.
 
 ![Alt](https://repobeats.axiom.co/api/embed/b5590d57a9c3443c86121c36ded22aeb28f709d2.svg "Repobeats analytics image")
 
-## 部署后的地址
 
-MOCREO: https://web-flasher.mocreo.com/
+## Project Information
 
-Vobot: https://web-flasher.myvobot.com/
+This project is based on the following open-source project:
+
+- [web-flasher](https://github.com/meshtastic/web-flasher)
+
+## Copyright Notice
+
+Modifications to this project were created by Zack Bonifer and are released under the GNU General Public License Version 3.
+
+## License
+
+This project is licensed under the GNU General Public License Version 3. See the LICENSE file for details.
