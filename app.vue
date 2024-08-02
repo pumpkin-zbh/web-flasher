@@ -5,8 +5,8 @@
       <p>Your browser does not support the WebSerial API. Please switch to a compatible browser, such as Chrome or Edge, for full functionality.</p>
     </div>
     <Head>
-      <Title>Meshtastic Flasher</Title>
-      <Meta name="description" content="Meshtastic Flasher" />
+      <Title>Flasher</Title>
+      <Meta name="description" content="Flasher" />
     </Head>
 
     <section class="text-gray-400 bg-2C2D3C body-font">
@@ -15,7 +15,7 @@
           <div class="flex flex-col content-center justify-center">
             <div class="flex flex-wrap sm:flex-row flex-col py-1">
               <div class="mx-auto">
-                <img src="@/assets/img/logo.svg" class="h-32 w-32 inline-block pt-0 mt-0" alt="Meshtastic Logo" />
+                <!-- <img src="@/assets/img/logo.svg" class="h-32 w-32 inline-block pt-0 mt-0" alt="Meshtastic Logo" /> -->
                 <h1 class="text-white text-6xl font-bold inline-block ml-4 mt-8 align-top">
                   Flasher
                 </h1>
