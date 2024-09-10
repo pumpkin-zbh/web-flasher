@@ -21,13 +21,14 @@ export const vobotFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.0.5",
-          title: "Mini Dock 1.0.5 RELEASE",
+          id: "v1.1.0",
+          title: "Mini Dock 1.1.0 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://dock-file.myvobot.com/firmware/mini_dock/firmware/firmware-dock-hub-1.0.5-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.1.0-prd.bin",
           release_notes:
-            "\r\n## Bug Fixes\r\n- Fixed currency recognition issue in the Stocks App\r\n- Fixed character escape issue when connecting to Wi-Fi\r\n- Fixed known issues and optimized structure in Factory firmware\r\n- Adjusted data retrieval intervals for some apps\r\n- Fixed issue where device could not wake up after triggering a popup in sleep mode\r\n- Fixed Bluetooth connection issue with Now Playing\r\n- Other known issues fixed\r\n\r\n## Enhancements\r\n- Added Todoist App\r\n- Supported application management and display control\r\n- Supported connection and updates through the app market\r\n- Added switch between metric and imperial units\r\n"
+            "\r\n## New Features\r\n- Major changes: LVGL version updated to v9.1.0, bringing better performance and more features.\r\n- ESP-IDF version updated to v5.3, improving system stability and compatibility.\r\n- Added atmosphere light that can be set to a single color to enhance the user’s personalized experience.\r\n- Added App carousel function to facilitate users to quickly browse and switch applications.\r\n- Added support for ShanWang Q36 model game controller to expand device compatibility.\r\n- App Gallery added a one-click feedback function to make user feedback more convenient.\r\n- PC H/W Monitor plug-in added support for MAC Intel version to improve cross-platform support.\r\n\r\n## Optimization Function\r\n- Weather App allows setting longitude and latitude to obtain more accurate information, improving user experience.\r\n- Added options when re-entering the Pomodoro App to continue the previous unfinished cycle or reset the Pomodoro to increase flexibility.\r\n- The Calendar App can set the first day of the calendar week to Monday or Sunday to meet the needs of different users.\r\n- PC H/W Monitor modifies the data acquisition method to adapt to more models of computers and improve compatibility.\r\n- Optimize the App management interface to make the operation more intuitive and convenient.\r\n- Optimize the OTA process to improve the stability and speed of updates.\r\n\r\n## Fixed Issues\r\n- Fixed the abnormal weather pop-up window issue to improve application stability.\r\n- Fixed the issue that Windows prompts that the device cannot be recognized when the developer mode is not turned on to improve the user experience.\r\n"
+
         }
       ],
       alpha: [
