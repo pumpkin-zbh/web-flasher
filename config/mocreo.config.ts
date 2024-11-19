@@ -73,8 +73,8 @@ export const mocreoFirmwareList = [
           title: "H5-Lite 1.0.5 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.0.5-prd.bin",
-          release_notes: "\r\n## Bug fixes\r\n* - Fixed known issues"
+          download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.1.0-prd.bin",
+          release_notes: "\r\n## New features\r\n- Support ST8, MS2\r\n- Sensor App supports automatic scrolling of cards\r\n- Sensor App supports displaying room names (in leaflets and details pages)\r\n\r\n## Optimization function\r\n- Firmware OTA logic optimization\r\n- Optimize the data synchronization speed of sensor app\r\n- Optimize some data reporting logic\r\n- Optimize some display UI\r\n\r\n## Bug Fixes\r\n- Fixed some basic environment bugs. \r\n- Fixed the problem of encoder failure\r\n- Fixed the issue where Schedule Alarm start and end time > end time configuration does not take effect\r\n- Fixed the problem of abnormal display of sensor app icon\r\n- Fixed some alarm exception issues\r\n\r\n## Enhancements\r\n- ESP-IDF version updated to v5.3.1. \r\n- lvgl version updated to v9.1.1. \r\n"
         }
       ],
       alpha: [
