@@ -69,8 +69,8 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.0.5",
-          title: "H5-Lite 1.0.5 RELEASE",
+          id: "v1.1.0",
+          title: "H5-Lite 1.1.0 RELEASE",
           page_url: "",
           zip_url: "",
           download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.1.0-prd.bin",
