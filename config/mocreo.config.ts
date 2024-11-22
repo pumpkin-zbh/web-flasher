@@ -45,9 +45,9 @@ export const mocreoFirmwareList = [
           title: "NS1 1.0.3 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/ns1/firmware/firmware-ns1-1.0.3-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/ns1/firmware/firmware-ns1-1.0.3-1-prd.bin",
           release_notes:
-            "\r\n## Bug Fixes\r\n- Fixed some underlying environment defects.\r\n- Fixed the inconsistency between probe status and App display.\r\n- Fixed the issue with incorrect judgment of alarm rule working time.\r\n- Fixed the issue where measurement data failed to report after network recovery.\r\n\r\n## Enhancements\r\n- ESP-IDF version updated to v5.3.\r\n- Supported OTA upgrades for devices through the MOCREO Smart App.\r\n"
+            "\r\n## Bug Fixes\r\n- Fixed some underlying environment defects.\r\n"
         }
       ],
       alpha: [
