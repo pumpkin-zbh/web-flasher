@@ -41,11 +41,11 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.0.3",
-          title: "NS1 1.0.3 RELEASE",
+          id: "v1.0.5",
+          title: "NS1 1.0.5 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/ns1/firmware/firmware-ns1-1.0.3-1-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/ns1/firmware/firmware-ns1-1.0.5-prd.bin",
           release_notes:
             "\r\n## Bug Fixes\r\n- Fixed some underlying environment defects.\r\n"
         }
