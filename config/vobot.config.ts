@@ -21,14 +21,13 @@ export const vobotFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.1.1",
-          title: "Mini Dock 1.1.1 RELEASE",
+          id: "v1.1.2",
+          title: "Mini Dock 1.1.2 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.1.1-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.1.2-prd.bin",
           release_notes:
-            "\r\n## New Features\r\n- Supports display of Latin Supplementary, Greek, and Cyrillic letters.\r\n\r\n## Optimization Function\r\n- Optimization of some interfaces.\r\n\r\n## Bug Fixes\r\n- Fixed known bugs.\r\n\r\n## Note\r\n- After updating to the latest version, if some apps downloaded from the app store are unavailable, please delete the app and download it again.\r\n"
-
+            "\r\n## New Features\r\n- Added new data sources to the computer monitoring app.\r\n- Multi-language support, supported in Setting.\r\n\r\n## Optimization Function\r\n- Some copywriting adjustments and optimizations.\r\n- Supports encoder scroll direction selection in settings.\r\n- The calendar supports specifying the day of the week to be displayed on the first day of each week.\r\n- Cryptocurrency can set the number of decimal places.\r\n- Cryptocurrency supports more currency units.\r\n- Support new packaging tools.\r\n\r\n## Bug Fixes\r\n- Fix known issues.\r\n- Fixed an issue where Windows would prompt that the device cannot be recognized when developer mode is not turned on.\r\n\r\n"
         }
       ],
       alpha: [
