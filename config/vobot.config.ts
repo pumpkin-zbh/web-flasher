@@ -21,14 +21,13 @@ export const vobotFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.1.2",
-          title: "Mini Dock 1.1.2 RELEASE",
+          id: "v1.1.3",
+          title: "Mini Dock 1.1.3 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.1.2-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.1.3-prd.bin",
           release_notes:
-            "\r\n## New Features\r\n- Added new data sources to the computer monitoring app.\r\n- Multi-language support, supported in Setting.\r\n\r\n## Optimization Function\r\n- Some copywriting adjustments and optimizations.\r\n- Supports encoder scroll direction selection in settings.\r\n- The calendar supports specifying the day of the week to be displayed on the first day of each week.\r\n- Cryptocurrency can set the number of decimal places.\r\n- Cryptocurrency supports more currency units.\r\n- Support new packaging tools.\r\n\r\n## Bug Fixes\r\n- Fix known issues.\r\n- Fixed an issue where Windows would prompt that the device cannot be recognized when developer mode is not turned on.\r\n\r\n"
-        }
+            "\r\n## New Features\r\n- Added support for dynamic configuration groups in web settings.\r\n\r\n## Optimization Function\r\n- Revised region modification guide.\r\n- Optimized web settings UI.\r\n- Improved loading speed of the setup web interface.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where the game app could not start when developer mode was enabled or connected to enterprise Wi-Fi.\r\n- Resolved a problem where the device time would not sync when the timezone was changed between 4 and 5 AM.\r\n- Fixed an issue with cryptocurrency where entering an incorrect cryptocurrency would cause the API to fail.\r\n\r\n## Compilation Environment Changes\r\n- Updated ESP-IDF version to v5.3.2.\r\n\r\n"        }
       ],
       alpha: [
         {
