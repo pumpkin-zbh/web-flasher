@@ -31,7 +31,7 @@
     "@zip.js/zip.js": "^2.7.32",
     "crypto-js": "^4.2.0",
     "esp-web-tools": "^9.4.3",
-    "esptool-js": "github:espressif/esptool-js",
+    "esptool-js": "^0.5.4",
     "file-saver": "^2.0.5",
     "flowbite": "^2.2.1",
     "flowbite-vue": "^0.1.2",
