@@ -21,13 +21,13 @@ export const vobotFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.1.3",
-          title: "Mini Dock 1.1.3 RELEASE",
+          id: "v1.2.0",
+          title: "Mini Dock 1.2.0 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.1.3-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.2.0-prd.bin",
           release_notes:
-            "\r\n## New Features\r\n- Added support for dynamic configuration groups in web settings.\r\n\r\n## Optimization Function\r\n- Revised region modification guide.\r\n- Optimized web settings UI.\r\n- Improved loading speed of the setup web interface.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where the game app could not start when developer mode was enabled or connected to enterprise Wi-Fi.\r\n- Resolved a problem where the device time would not sync when the timezone was changed between 4 and 5 AM.\r\n- Fixed an issue with cryptocurrency where entering an incorrect cryptocurrency would cause the API to fail.\r\n\r\n## Compilation Environment Changes\r\n- Updated ESP-IDF version to v5.3.2.\r\n\r\n"        }
+            "\r\n## New Features\r\n- Added brightness control options for screen, LED clock, and ambient light\r\n- Added privacy mode\r\n- App settings on the web page support more configurations\r\n\r\n## Optimizations\r\n- Optimized network error dialog logic\r\n- PC H/W Monitoring now supports displaying FPS\r\n- Improved Wi-Fi connectivity\r\n- Enhanced some app UI and error messages\r\n\r\n## Bug Fixes\r\n- Fixed an error when accessing the Application Settings web page\r\n- Fixed the issue where the system minimum version was not checked when updating the app market\r\n- Fixed the issue where spaces at the end of Wi-Fi names were removed in the input field after clicking the list in the web\r\n- Fixed display issues on the homepage when there are only two apps\r\n- Fixed the issue where files with certain special names in the game app could not be deleted\r\n\r\n"        }
       ],
       alpha: [
         {
