@@ -74,7 +74,9 @@ export const mocreoFirmwareList = [
           page_url: "",
           zip_url: "",
           download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.1.7-prd.bin",
-          release_notes: "\r\n# 1.1.7\r\n\r\n## Optimization function\r\n- During Bluetooth scanning, peripheral device information is logged every 5/10 scans to improve debugging efficiency.\r\n- When an alert is triggered, a mask is displayed on the sensor app interface with a prompt to "Silence Alerts >" indicating the scroll wheel position.\r\n- Cards that trigger alerts will remain red even if dismissed, until the values return to normal.\r\n- Triggering an alert outside the sensor app or on history/detail pages will automatically redirect to the sensor app data display page.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where the sensor app indicated no sensors after upgrading from a lower version.\r\n- Corrected the misidentification of H5-LITE as H5-PRO.\r\n- Resolved the problem where alerts were not turned off when receiving empty rules during an alert.\r\n"}      ],
+          release_notes: "\r\n# 1.1.7\r\n\r\n## Optimization function\r\n- During Bluetooth scanning, peripheral device information is logged every 5/10 scans to improve debugging efficiency.\r\n- When an alert is triggered, a mask is displayed on the sensor app interface with a prompt to \"Silence Alerts >\" indicating the scroll wheel position.\r\n- Cards that trigger alerts will remain red even if dismissed, until the values return to normal.\r\n- Triggering an alert outside the sensor app or on history/detail pages will automatically redirect to the sensor app data display page.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where the sensor app indicated no sensors after upgrading from a lower version.\r\n- Corrected the misidentification of H5-LITE as H5-PRO.\r\n- Resolved the problem where alerts were not turned off when receiving empty rules during an alert.\r\n"
+        }
+      ],
       alpha: [
         {
           id: "v2.3.15.deb7c27",
