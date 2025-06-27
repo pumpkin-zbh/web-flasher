@@ -41,13 +41,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.0.5",
-          title: "NS1 1.0.5 RELEASE",
+          id: "v1.0.6",
+          title: "NS1 1.0.6 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/ns1/firmware/firmware-ns1-1.0.5-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/ns1/firmware/firmware-ns1-1.0.6-prd.bin",
           release_notes:
-            "\r\n## Bug Fixes\r\n- Fixed some underlying environment defects.\r\n"
+            "\r\n# 1.0.6\r\n\r\n## Optimization function\r\n- Adjust the setup process.\r\n- Add FAQ link to the support page.\r\n- Change Wi-Fi connection method to full channel scanning.\r\n\r\n## Bug Fixes\r\n- Enhance compatibility for special cases during measurement data reporting.\r\n"
         }
       ],
       alpha: [
