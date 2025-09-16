@@ -102,7 +102,7 @@ export const mocreoFirmwareList = [
           zip_url: "",
           download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.1.0-prd.bin",
           release_notes:
-            ''
+            "\r\n# 1.1.0\r\n\r\n"
         }
       ],
       alpha: [
