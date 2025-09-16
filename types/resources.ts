@@ -23,6 +23,14 @@ export const OfflineHardwareList = [
         "activelySupported": true,
         "displayName": "NS1"
     },
+    {
+        "hwModel": 4,
+        "hwModelSlug": "TBEAM_S3_CORE",
+        "platformioTarget": "tbeam-s3-core",
+        "architecture": "esp32-s3",
+        "activelySupported": true,
+        "displayName": "H5-Pro"
+    },
 ]
 
 export const firmwareList = {
