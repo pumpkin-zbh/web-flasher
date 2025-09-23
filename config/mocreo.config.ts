@@ -96,13 +96,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.1.0",
-          title: "H5-Pro 1.1.0 RELEASE",
+          id: "v1.2.0",
+          title: "H5-Pro 1.2.0 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.1.0-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.2.0-prd.bin",
           release_notes:
-            "\r\n# 1.1.0\r\n\r\n"
+            "\r\n# 1.2.0\r\n\r\n## Features\r\n- Support for multiple Wi-Fi networks, including WPA-type, with the ability to switch and forget networks.\r\n- Added a new workflow for configuring Wi-Fi only.\r\n- Support for remotely dismissing alerts.\r\n- Support for LW1 and SW3 devices.\r\n\r\n## Improvements\r\n- The Weather App no longer shows repeated pop-ups on data fetch failures, except for the first attempt.\r\n- Optimized the synchronization of network information with the server.\r\n- Improved the alert display within the Sensor App.\r\n- Optimized the process for fetching and triggering alert rules.\r\n\r\n## Bug Fixes\r\n- Fixed an issue with incorrect indicator light status on device startup.\r\n- Fixed an issue preventing proper dismissal of recurring alerts.\r\n- Resolved display errors on history and detail pages when LW1 device information was missing.\r\n- Fixed an issue where network information (e.g., network name, signal strength) was missing from status reports.\r\n- Fixed a status synchronization failure that occurred in specific scenarios after remote command execution.\r\n- Resolved an issue causing the alert dismissal interface to disappear when the device list was updated.\r\n"
         }
       ],
       alpha: [
