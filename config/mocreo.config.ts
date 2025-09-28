@@ -70,12 +70,12 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.1.7",
-          title: "H5-Lite 1.1.7 RELEASE",
+          id: "v1.2.0",
+          title: "H5-Lite 1.2.0 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.1.7-prd.bin",
-          release_notes: "\r\n# 1.1.7\r\n\r\n## Optimization function\r\n- During Bluetooth scanning, peripheral device information is logged every 5/10 scans to improve debugging efficiency.\r\n- When an alert is triggered, a mask is displayed on the sensor app interface with a prompt to \"Silence Alerts >\" indicating the scroll wheel position.\r\n- Cards that trigger alerts will remain red even if dismissed, until the values return to normal.\r\n- Triggering an alert outside the sensor app or on history/detail pages will automatically redirect to the sensor app data display page.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where the sensor app indicated no sensors after upgrading from a lower version.\r\n- Corrected the misidentification of H5-LITE as H5-PRO.\r\n- Resolved the problem where alerts were not turned off when receiving empty rules during an alert.\r\n"
+          download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.2.0-prd.bin",
+          release_notes: "\r\n# 1.2.0\r\n\r\n## Build Environment\r\n- Updated ESP-IDF version to v5.3.3.\r\n\r\n## New Features\r\n- Added support for WPA-type Wi-Fi.\r\n- Added the ability to switch and forget Wi-Fi networks.\r\n- Added a dedicated flow for Wi-Fi only configuration.\r\n- Added support for multiple Wi-Fi connections.\r\n- Added support for remote dismiss.\r\n- Added support for SW3.\r\n\r\n## Optimization function\r\n- The Weather App now only shows a pop-up on the first fetch failure, not on subsequent ones.\r\n- Optimized the process for synchronizing network information to the server.\r\n- Optimized the alert display in the Sensor App.\r\n- Optimized the process for fetching and triggering alert rules.\r\n\r\n## Bug Fixes\r\n- Fixed an issue where the indicator light status could be incorrect after device startup.\r\n- Fixed an issue where repeating alerts could sometimes not be cleared properly.\r\n- Fixed an issue where network information (such as network name and signal strength) was missing in status reports.\r\n- Fixed a status synchronization anomaly that could occur after executing remote commands in specific scenarios.\r\n- Fixed an issue where the 'Clear Alert' interface could disappear after the device list was refreshed.\r\n"
         }
       ],
       alpha: [
