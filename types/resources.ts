@@ -31,6 +31,14 @@ export const OfflineHardwareList = [
         "activelySupported": true,
         "displayName": "H5-Pro"
     },
+    {
+        "hwModel": 5,
+        "hwModelSlug": "RAK11200",
+        "platformioTarget": "rak11200",
+        "architecture": "esp32-c3",
+        "activelySupported": true,
+        "displayName": "NS2"
+    },
 ]
 
 export const firmwareList = {
