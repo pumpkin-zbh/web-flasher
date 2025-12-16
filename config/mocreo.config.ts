@@ -112,6 +112,7 @@ export const mocreoFirmwareList = [
           zip_url: "",
           download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.2.2-prd.bin",
           release_notes: "\r\n# 1.2.2\r\n\r\n## New Features\r\n- Device Support: Added compatibility for LD1 and MS2 models.\r\n- Hybrid Mode: Introduced Cloud + Local hybrid mode for versatile connectivity.\r\n- Network Settings: Added support for Static IP configuration and custom NTP server selection.\r\n\r\n## Optimizations\r\n- Connection Stability: Optimized LS1/LS2 offline detection logic to reduce false alarms.\r\n- Network Reliability: Enhanced CoAP communication with intelligent retry mechanisms and self-adaptive heartbeat intervals for better stability.\r\n\r\n"
+        }
       ],
       alpha: [
         {
