@@ -21,13 +21,13 @@ export const vobotFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.2.1",
-          title: "Mini Dock 1.2.1 RELEASE",
+          id: "v1.2.5",
+          title: "Mini Dock 1.2.5 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.2.1-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/mini_dock/firmware/firmware-dock-hub-1.2.5-prd.bin",
           release_notes:
-            "\r\n## Bug Fixes\r\n- Fixed an issue where the program failed to start due to a change in the Flash chip manufacturer.\r\n\r\n"        }
+            "\r\n## 1.2.5 Release Notes\r\n- Adjusted Todoist app API\r\n- Fixed a black screen issue when entering Locale caused by timezone problems\r\n\r\n"        }
       ],
       alpha: [
         {
