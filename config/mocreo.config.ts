@@ -106,13 +106,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.2.2",
-          title: "H5-Pro 1.2.2 RELEASE",
+          id: "v1.2.3",
+          title: "H5-Pro 1.2.3 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.2.2-prd.bin",
-          release_notes: "\r\n# 1.2.2\r\n\r\n## New Features\r\n- Device Support: Added compatibility for LD1 and MS2 models.\r\n- Hybrid Mode: Introduced Cloud + Local hybrid mode for versatile connectivity.\r\n- Network Settings: Added support for Static IP configuration and custom NTP server selection.\r\n\r\n## Optimizations\r\n- Connection Stability: Optimized LS1/LS2 offline detection logic to reduce false alarms.\r\n- Network Reliability: Enhanced CoAP communication with intelligent retry mechanisms and self-adaptive heartbeat intervals for better stability.\r\n\r\n"
-        }
+          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.2.3-prd.bin",
+          release_notes: 
+            "\r\n# 1.2.3\r\n\r\n## New Features\r\n- Device Support: Added support for the LB1 device.\r\n- Alert Rules: Added support for deploying alert rules for LS1/LS2 models.\r\n\r\n## Optimizations\r\n- System Diagnosis & OTA: Improved diagnostic completion prompts and added a specific failure interface for H5 factory partition OTA errors.\r\n- Device Reporting: Optimized MS2 status reporting and implemented immediate Hub reports for significant sensor battery changes (10% threshold).\r\n- Setup & UI: Added a "Return to First Page" button for Hub setup errors and enhanced the Weather App with a manual refresh button, timestamps, and randomized polling.\r\n- Network Resilience: Implemented auto-reconnection for Wi-Fi, scheduled reboots for persistent disconnections, and stability fixes for CoAP subscription failures.\r\n- Connectivity & Data: Added automatic and manual Public IP syncing and validated pagination logic for data retrieval.\r\n\r\n## Bug Fixes\r\n- Light Effects: Fixed an issue where lighting effects failed to update correctly upon network restoration.\r\n- Synchronization: Resolved a bug preventing timely server updates for LS1/LS2 configuration changes.\r\n\r\n"        }
       ],
       alpha: [
         {
