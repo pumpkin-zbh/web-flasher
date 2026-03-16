@@ -81,12 +81,14 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.2.1",
-          title: "H5-Lite 1.2.1 RELEASE",
+          id: "v1.2.3",
+          title: "H5-Lite 1.2.3 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.2.1-prd.bin",
-          release_notes: "\r\n# 1.2.1\r\n\r\n## Optimization function\r\n- Rule Inheritance: Override/repeat rules inherit active rule's repeatInterval to save resources.\r\n- Dismiss Fix: Dismiss skips hierarchical rule reports, reducing noise.\r\n- Data Filter: Reports only on changes for levels, ignoring duplicates.\r\n\r\n"        }
+          download_url: "https://file.mocreo.com/firmware/h5_lite/firmware/firmware-mocreo-hub-1.2.3-prd.bin",
+          release_notes: 
+            '\r\n# 1.2.3\r\n\r\n## Build Environment\r\n- ESP-IDF Update: Upgraded to V5.4.3.\r\n- Factory Firmware: Factory firmware updated accordingly.\r\n\r\n## New Features\r\n- MS2 Support: Added support for MS2.\r\n- Hybrid Mode: Supports cloud + local hybrid mode.\r\n- Static IP: Added support for static IP configuration.\r\n- NTP Source: Supports changing NTP server sources.\r\n- Automation Rules: Added support for automation rules.\r\n\r\n## Optimizations\r\n- Temperature Sync: Temperature unit is now synchronized directly from the cloud; local configuration entry removed.\r\n- CoAP /ping Backoff: Added exponential backoff with randomness when CoAP /ping fails.\r\n- CoAP Check: Verify CoAP connection status before invoking the /ping interface.\r\n- Adaptive Ping Interval: When subscription fails, automatically decrease the underlying CoAP ping–pong interval.\r\n- H5 Diagnostic Mode: Optimized prompt messages after scan completion.\r\n- H5 OTA (Factory Partition): Added a failure notification page when OTA fails.\r\n- MS2 Alarm Broadcast: When alarm state 101 is received via Bluetooth broadcast, stop data reporting without reporting probe status as -2.\r\n- Sensor Battery Reporting: Hub immediately reports when a significant battery level change is detected (≥10%).\r\n- Setup Flow: When Hub is on an error page, provide a button to return to the first setup page.\r\n- Weather App Interaction:\r\n  - Polling interval adjusted to 30 minutes + 0–5 minutes random delay.\r\n  - Added manual refresh button.\r\n  - Added time display.\r\n- Wi-Fi Reconnect: When Wi-Fi disconnects (STA_DISCONNECTED from network diagnostics), automatically rescan nearby networks and retry connection.\r\n- Network Reboot Mechanism: Added reboot logic after network disconnection (Wi-Fi or Ethernet) persists for a period of time.\r\n- CoAP Subscription Recovery: Added reboot mechanism after continuous CoAP subscription failures for a period of time.\r\n- Network Diagnostics Optimization:\r\n  - Added external UDP access test.\r\n  - Added CoAP whoami access test.\r\n  - Added log upload test.\r\n- CoAP Disconnect Alert: Added popup notification when device disconnects from CoAP and times out.\r\n- Public IP Sync:\r\n  - Sync public IP after setup completion.\r\n  - Supports command-triggered synchronization.\r\n- Pagination Logic: Added validation checks to the paginated retrieval logic.\r\n\r\n## Bug Fixes\r\n- Network Recovery Fix: Fixed issue where LED effects were not updated after network reconnection.\r\n\r\n'
+        }
       ],
       alpha: [
         {
