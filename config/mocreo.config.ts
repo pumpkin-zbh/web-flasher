@@ -136,13 +136,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.0.1",
-          title: "NS2 1.0.1 RELEASE",
+          id: "v1.0.2",
+          title: "NS2 1.0.2 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/ns2/firmware/firmware-ns2-1.0.1-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/ns2/firmware/firmware-ns2-1.0.2-prd.bin",
           release_notes:
-            "\r\n# 1.0.1\r\n\r\n## Optimization function\r\n- Added screen-off feature.\r\n- Wi-Fi supports WPA authentication.\r\n\r\n## Bug Fixes\r\n- Fixed known issues.\r\n"
+            "\r\n# 1.0.2\r\n\r\n## Bug Fixes\r\n- Fixed known issues.\r\n"
         }
       ],
       alpha: [
