@@ -119,13 +119,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.2.3",
-          title: "H5-Pro 1.2.3 RELEASE",
+          id: "v1.3.0",
+          title: "H5-Pro 1.3.0 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.2.3-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.3.0-prd.bin",
           release_notes: 
-            '\r\n# 1.2.3\r\n\r\n## New Features\r\n- Device Support: Added support for the LB1 device.\r\n- Alert Rules: Added support for deploying alert rules for LS1/LS2 models.\r\n\r\n## Optimizations\r\n- System Diagnosis & OTA: Improved diagnostic completion prompts and added a specific failure interface for H5 factory partition OTA errors.\r\n- Device Reporting: Optimized MS2 status reporting and implemented immediate Hub reports for significant sensor battery changes (10% threshold).\r\n- Setup & UI: Added a "Return to First Page" button for Hub setup errors and enhanced the Weather App with a manual refresh button, timestamps, and randomized polling.\r\n- Network Resilience: Implemented auto-reconnection for Wi-Fi, scheduled reboots for persistent disconnections, and stability fixes for CoAP subscription failures.\r\n- Connectivity & Data: Added automatic and manual Public IP syncing and validated pagination logic for data retrieval.\r\n\r\n## Bug Fixes\r\n- Light Effects: Fixed an issue where lighting effects failed to update correctly upon network restoration.\r\n- Synchronization: Resolved a bug preventing timely server updates for LS1/LS2 configuration changes.\r\n\r\n'
+            '\r\n# 1.3.0\r\n\r\n## New Features\r\n- Sensor Support: Added support for MS3 and SD1 sensors.\r\n\r\n## Optimizations\r\n- Display: Lowered the minimum screen brightness.\r\n- System: Optimized some internal logic.\r\n\r\n## Bug Fixes\r\n- General: Fixed known issues.\r\n'
         }
       ],
       alpha: [
