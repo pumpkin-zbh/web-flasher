@@ -39,6 +39,14 @@ export const OfflineHardwareList = [
         "activelySupported": true,
         "displayName": "NS2"
     },
+    {
+        "hwModel": 6,
+        "hwModelSlug": "RAK11200",
+        "platformioTarget": "rak11200",
+        "architecture": "esp32-c3",
+        "activelySupported": true,
+        "displayName": "NS3"
+    },
 ]
 
 export const firmwareList = {
