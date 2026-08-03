@@ -119,13 +119,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.3.0",
-          title: "H5-Pro 1.3.0 RELEASE",
+          id: "v1.3.1",
+          title: "H5-Pro 1.3.1 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.3.0-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.3.1-prd.bin",
           release_notes: 
-            '\r\n# 1.3.0\r\n\r\n## New Features\r\n- Sensor Support: Added support for MS3 and SD1 sensors.\r\n\r\n## Optimizations\r\n- Display: Lowered the minimum screen brightness.\r\n- System: Optimized some internal logic.\r\n\r\n## Bug Fixes\r\n- General: Fixed known issues.\r\n'
+            '\r\n# 1.3.1\r\n\r\n## Bug Fixes\r\n- Fixed known issues\r\n\r\n'
         }
       ],
       alpha: [
