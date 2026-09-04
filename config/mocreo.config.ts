@@ -119,13 +119,13 @@ export const mocreoFirmwareList = [
     release: {
       stable: [
         {
-          id: "v1.3.1",
-          title: "H5-Pro 1.3.1 RELEASE",
+          id: "v1.3.2",
+          title: "H5-Pro 1.3.2 RELEASE",
           page_url: "",
           zip_url: "",
-          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.3.1-prd.bin",
+          download_url: "https://file.mocreo.com/firmware/h5_pro/firmware/firmware-mocreo-hub-1.3.2-prd.bin",
           release_notes: 
-            '\r\n# 1.3.1\r\n\r\n## Bug Fixes\r\n- Fixed known issues\r\n\r\n'
+            '\r\n# 1.3.2\r\n\r\n## Bug Fixes\r\n- Fixed known issues\r\n\r\n'
         }
       ],
       alpha: [
